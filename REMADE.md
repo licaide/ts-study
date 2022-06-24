@@ -1,5 +1,3 @@
-# ts-study
-
 typescript 新建项目配置
 npm install --save-dev typescript
 npm install --save-dev ts-node

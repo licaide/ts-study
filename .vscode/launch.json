@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [
+                // "-u",
+                // "tdd",
+                // "--timeout",
+                // "999999",
+                // "--colors",
+                "-r",
+                "ts-node/register",
+                "${workspaceFolder}/test/test-sinon.ts"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "name": "Mocha Tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+
+        {
+            "name": "Current TS File",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
+            "args": [
+                "${relativeFile}"
+            ],
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector"
+        }
+    ]
+}
