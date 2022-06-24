@@ -20,7 +20,7 @@ mkdir ./vscode/launch.json
 这样使 F5 就可以直接测试当前打开的文件
 要指定文件 吧"${relativeFile}"替换文具体的文件就可以了
 执行 tsc 就可以编译 ts 文件
-
+##############################################################################
 typescript eslint 配置说
 npm install --save-dev eslint
 npm install --save-dev typescript
@@ -47,7 +47,13 @@ mkdir .eslintrc.json
 }
 vscode 添加 eslint 工具
 vscode 重新打开项目编辑器就会用 eslint 识别代码
-
+或者执行 npx eslint src 就可跑起来上看全部文件的验证信息
+在新建的 package.json 添加如下内容
+"scripts": {
+"eslint": "eslint src --ext .ts"
+}
+这样执行 npm run eslint 就可以跑语法验证了
+########################################################################
 typescript 测试框架配置
 
 npm install --save-dev chai @types/chai

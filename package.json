@@ -20,7 +20,8 @@
   },
   "scripts": {
     "test": "mocha -r ts-node/register test/**/*.ts",
-    "coverage": "nyc --reporter=html mocha -r ts-node/register test/**/*.ts"
+    "coverage": "nyc --reporter=html mocha -r ts-node/register test/**/*.ts",
+    "eslint": "eslint src --ext .ts"
   },
   "author": "",
   "license": "ISC"
